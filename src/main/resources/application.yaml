@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: grpc-client
+
+grpc:
+  client:
+    server:
+      host: localhost
+      port: 9090
