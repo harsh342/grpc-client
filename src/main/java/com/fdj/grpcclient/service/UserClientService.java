@@ -1,16 +1,18 @@
 package com.fdj.grpcclient.service;
 
-import com.fdj.grpcclient.config.GrpcClientConfig;
-import com.fdj.grpcclient.UserRequest;
-import com.fdj.grpcclient.UserResponse;
-import com.fdj.grpcclient.UserGrpc;
-import io.grpc.ManagedChannel;
-import io.grpc.ManagedChannelBuilder;
+import javax.annotation.PreDestroy;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PreDestroy;
+import com.fdj.grpcclient.UserGrpc;
+import com.fdj.grpcclient.UserRequest;
+import com.fdj.grpcclient.UserResponse;
+import com.fdj.grpcclient.config.GrpcClientConfig;
+
+import io.grpc.ManagedChannel;
+import io.grpc.ManagedChannelBuilder;
 
 @Service
 public class UserClientService {
